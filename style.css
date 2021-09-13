@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+*{
+    margin: 0;
+    font-family: Poppins;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h2{
+    font-size: 20px;
+    font-weight: 200;
+}
+.container{
+    color: white;
+    background: rgba(44, 41, 41, 0.705);
+    width: 400px;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.form-control{
+    position: relative;
+    margin-bottom:5px ; 
+    padding-bottom: 10px;
+}
+.form-control input{
+    border: 0;
+    outline: none;
+    width:350px;
+    height:40px ;
+    font-size: 14px;
+    font-family: inherit;
+    border-radius: 4px;
+}
+.form-control label{
+    /* display: inline; */
+    margin-bottom: 10px;
+}
+.form-control i{
+    position: absolute;
+    top: 45px;
+    right: 50px;
+    visibility: hidden;
+}
+.form-control small{
+    position: absolute;
+   bottom: -12px;
+   left: 0;
+   visibility: hidden;
+}
+
+.form-control.success input{
+    border: lawngreen solid 2px;
+}
+.form-control.success .fa-check-circle{
+    visibility: visible;
+    color: lawngreen;
+}
+.form-control.error .fa-exclamation-circle{
+    visibility: visible;
+    color:red;
+}
+.form-control.error input{
+    border: red solid 2px;
+}
+.form-control.error small{
+    color: red;
+    visibility: visible;
+}
+
+
+
+.title,.submit{
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    border: 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family:inherit;
+    color: white;
+    background: black;
+    letter-spacing: 2px;
+    transition: ease-in-out .6s;
+}
+button:hover{
+    /* color: black; */
+    background: rgb(39, 39, 39);
+    border-radius: 5px;
+}
+
+.nationality-dropdown , .gender-btns{
+    margin-bottom: 20px;
+}
+select{
+    border: 0;
+    padding: 6px;
+}
+
+
